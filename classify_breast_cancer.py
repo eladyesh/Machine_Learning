@@ -5,6 +5,9 @@ from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import mean_squared_error as mse
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def plot_confusion_matrix(cm):
     """
@@ -53,8 +56,8 @@ x_train, x_test, y_train, y_test = train_test_split(X, y_new, test_size=0.2, ran
 
 # Define model architecture
 model = tf.keras.Sequential([
-  tf.keras.layers.Dense(units=2, activation='sigmoid'),
-  tf.keras.layers.Dense(units=2, activation='softmax')
+  tf.keras.layers.Dense(units=2, activation='softmax'),
+  tf.keras.layers.Dense(units=2)
 ])
 
 # Compile model
