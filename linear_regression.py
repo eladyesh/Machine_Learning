@@ -30,3 +30,5 @@ print("Coefficient of x^4 is ", model.coef_[3])
 # the underlying function accurately.
 mse = np.mean((model.predict(x_test) - y_test)**2)
 print("Mean squared error:", mse)
+
+# output --> y = -0.0 * x^4 + 5.0 * x^3 + -2.0 * x^2 + -1.0 * x + 5.0
