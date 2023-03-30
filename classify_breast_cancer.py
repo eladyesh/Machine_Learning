@@ -56,8 +56,8 @@ x_train, x_test, y_train, y_test = train_test_split(X, y_new, test_size=0.2, ran
 
 # Define model architecture
 model = tf.keras.Sequential([
-  tf.keras.layers.Dense(units=2, activation='softmax'),
-  tf.keras.layers.Dense(units=2)
+  tf.keras.layers.Dense(units=2, activation='sigmoid'),
+  tf.keras.layers.Dense(units=2, activation='softmax')
 ])
 
 # Compile model
