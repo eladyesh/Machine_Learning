@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 def plot_confusion_matrix(cm):
     """
     This function takes in true labels and predicted labels as NumPy arrays and plots the corresponding confusion matrix using Seaborn.
@@ -43,9 +44,9 @@ X = np.array(pd.DataFrame(data.data, columns=data.feature_names))
 Y = np.array(pd.Series(data.target))
 
 # Classify
-y1 = Y*0
+y1 = Y * 0
 y1[np.argwhere(Y == 1)] = 1
-y2 = Y*0
+y2 = Y * 0
 y2[np.argwhere(Y == 0)] = 1
 y_new = np.array([y1, y2]).T
 
@@ -56,8 +57,8 @@ x_train, x_test, y_train, y_test = train_test_split(X, y_new, test_size=0.2, ran
 
 # Define model architecture
 model = tf.keras.Sequential([
-  tf.keras.layers.Dense(units=2, activation='sigmoid'),
-  tf.keras.layers.Dense(units=2, activation='softmax')
+    tf.keras.layers.Dense(units=2, activation='sigmoid'),
+    tf.keras.layers.Dense(units=2, activation='softmax')
 ])
 
 # Compile model
