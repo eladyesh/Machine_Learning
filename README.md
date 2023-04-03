@@ -5,11 +5,12 @@ This repository contains a collection of Python programs for machine learning, i
 ## Programs
 
 ### Classification
-The following programs implement various classification algorithms:
-- Naive Bayes Classifier
-- K-Nearest Neighbors Classifier
-- Decision Tree Classifier
-- Random Forest Classifier
+The following programs use the Iris dataset and breast cancer prediction:
+
+- Iris Classification: This program uses various classification algorithms to classify iris flowers based on their characteristics such as sepal length, sepal width, petal length, and petal width.
+
+- Breast Cancer Prediction: This program uses logistic regression and support vector machines to predict whether a patient has breast cancer or not based on features such as the size and shape of the tumor.
+
 
 ### Linear Regression
 The following programs implement various linear regression algorithms:
