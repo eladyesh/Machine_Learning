@@ -25,7 +25,7 @@ Y1 = np.asarray([y1,y2,y3]).T
 # split
 x_train, x_test, y_train, y_test = split(X, Y1, test_size = 0.1, random_state = 1)
 
-# layers
+# Layers
 ann = tf.keras.models.Sequential()
 ann.add(tf.keras.layers.Dense(units=3))
 ann.add(tf.keras.layers.Dense(units=3))
